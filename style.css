@@ -37,8 +37,9 @@ body {
 	z-index: -1;
 }
 .logo {
-	text-align: center;
-	margin-top: auto;
+	position: relative;
+	top: 50px;
+	margin: 0 auto;
 }
 
 .container {
@@ -83,7 +84,8 @@ body {
 	margin-bottom: 50px;
 }
 
-.container > div {
+.bmi-value,
+.status {
 	padding: 10px 20px;
 	font-size: 15px;
 	font-weight: bold;
