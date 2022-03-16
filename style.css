@@ -29,7 +29,7 @@ body {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
 		url('./img/hero-bg.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -39,9 +39,6 @@ body {
 .logo {
 	text-align: center;
 	margin-top: auto;
-}
-.bg-logo {
-	width: 230px;
 }
 
 .container {
