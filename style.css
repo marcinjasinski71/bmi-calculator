@@ -12,8 +12,8 @@ input::-webkit-inner-spin-button {
 
 :root {
 	--cta-color: #f2484b;
-	--second-color: #0b50e665;
-	--third-color: #0b50e69d;
+	--second-color: #0b50e6e8;
+	--third-color: #0b50e6e8;
 	--bg-color: #8693ab;
 	--font-color: #202020;
 	--input-color: #e4e4e4de;
@@ -21,12 +21,27 @@ input::-webkit-inner-spin-button {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: var(--bg-color);
 	color: var(--font-color);
+	height: 100%;
+}
+
+.hero-image {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+		url('./img/hero-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
 }
 .logo {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: auto;
+}
+.bg-logo {
+	width: 230px;
 }
 
 .container {
@@ -35,7 +50,6 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	min-width: 100%;
-
 	grid-template-columns: 50vw;
 	grid-template-rows: repeat(3, 10vh) 5vh repeat(2, 10vh);
 	grid-gap: 25px;
@@ -65,6 +79,7 @@ body {
 	display: grid;
 	grid-template-rows: 50% 50%;
 	text-align: center;
+	border-radius: 10px;
 }
 .status {
 	background-color: var(--third-color);
@@ -76,7 +91,6 @@ body {
 	font-size: 15px;
 	font-weight: bold;
 	color: var(--font-color);
-	border-radius: 10px;
 }
 input {
 	max-width: 100%;
